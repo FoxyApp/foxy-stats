@@ -2,6 +2,7 @@
   import "./../app.css";
   import Image from './../lib/images/image.png'
   import {chosenLearner} from "../chosenLearner.js";
+  import IconButton from '@smui/icon-button';
 
   export let learners = [
     {
@@ -43,6 +44,7 @@
 
 <div class="text-white flex flex-row justify-between min-h-screen">
   <div class="w-[280px] min-w-[280px] py-5 bg-[#4c6c62] px-5">
+
     <img src={Image} class="w-[280px]"/>
 
     <label>Learner</label>
@@ -67,6 +69,7 @@
     <hr/>
 
     <a href="/stats" class="text-white visited:text-white block px-5 py-3 hover:bg-[#8EC6B4] cursor-pointer">Insights</a>
+    <a href="/" class="text-white visited:text-white block px-5 py-3 hover:bg-[#8EC6B4] cursor-pointer">Logout</a>
 
   </div>
   <div class="flex-1">
