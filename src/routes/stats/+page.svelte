@@ -44,11 +44,13 @@
     </Tab>
 </TabBar>
 
-{#if active.label === 'Engagement'}
-    <EngagementChart />
-{:else if active.label === 'Growth'}
-    <GrowthChart />
-{:else if active.label === 'Peers'}
-    <BaselineChart />
-{/if}
+<div class="justify-center flex">
+    {#if active.label === 'Engagement'}
+        <EngagementChart />
+    {:else if active.label === 'Growth'}
+        <GrowthChart />
+    {:else if active.label === 'Peers'}
+        <BaselineChart />
+    {/if}
+</div>
 

@@ -16,12 +16,12 @@
 
 </script>
 
-<div class="w-full self-center">
+<div class="self-center h-[500px] w-[500px]">
   <Doughnut options="{{
     plugins: {
       title: {
           display: true,
-          text: learner.label + '\'s engagement with Foxy'
+          text: ''
       }
     }
   }}" data={{

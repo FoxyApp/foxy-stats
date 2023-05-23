@@ -19,12 +19,12 @@
 
 </script>
 
-<div class="w-full self-center">
+<div class="self-center h-[600px] w-[800px]">
   <Bar options="{{
     plugins: {
       title: {
           display: true,
-          text: learner.label + '\'s learning benefits with Foxy'
+          text: ''
       }
     },
     indexAxis: 'y',

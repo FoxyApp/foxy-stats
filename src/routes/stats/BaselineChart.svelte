@@ -32,7 +32,7 @@
   });
 </script>
 
-<div class="w-full self-center">
+<div class="self-center h-[600px] w-[600px]">
   <Radar options="{{
       plugins: {
         title: {

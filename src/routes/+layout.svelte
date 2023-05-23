@@ -42,7 +42,7 @@
 
 
 <div class="text-white flex flex-row justify-between min-h-screen">
-  <div class="w-[280px] py-5 bg-[#4c6c62] px-5">
+  <div class="w-[280px] min-w-[280px] py-5 bg-[#4c6c62] px-5">
     <img src={Image} class="w-[280px]"/>
 
     <label>Learner</label>
