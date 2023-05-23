@@ -1,5 +1,5 @@
 <script>
-import Chart from "./Chart.svelte";
+
 </script>
 
 <svelte:head>
@@ -8,7 +8,7 @@ import Chart from "./Chart.svelte";
 </svelte:head>
 
 <section>
-    <Chart/>
+
 </section>
 <style>
     h1 {

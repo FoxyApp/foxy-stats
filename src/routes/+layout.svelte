@@ -1,24 +1,75 @@
 <script>
-    import "./../app.css";
-    import Image from './../lib/images/image.png'
-    import { fly } from 'svelte/transition';
+  import "./../app.css";
+  import Image from './../lib/images/image.png'
+  import {chosenLearner} from "../chosenLearner.js";
 
+  export let learners = [
+    {
+      label: "Farisa",
+      grade: "4th",
+      baseline: {
+        baseline: [80, 65, 78],
+        standing: [65, 70, 75]
+      },
+      growth: {
+        initial: [80, 65, 78],
+        foxy: [80, 65, 78]
+      },
+      engagement: [1, 4, 3.5]
+    },
+    {
+      label: "Alex",
+      grade: "5th",
+      baseline: {
+        baseline: [80, 65, 78],
+        standing: [90, 70, 69]
+      },
+      growth: {
+        initial: [80, 65, 78],
+        foxy: [60, 20, 60]
+      },
+      engagement: [4.5, 2, 3]
+    }
+  ]
+
+  chosenLearner.set(learners[0]);
+  export let learner;
+
+  chosenLearner.subscribe(value => {
+    learner = value;
+  });
 </script>
-<div class="text-white flex flex-row justify-between h-[100vh]">
-    <div class="w-[420px] py-5 bg-[#4c6c62] px-5 h-full">
-        <img src={Image} class="w-[200px] self-center ml-5"/>
-        <label>Nutzer auswählen</label>
-        <select class="w-full mt-3 p-3 bg-transparent hover:bg-[#FFF000] cursor-pointer">
-            <option>Frida</option>
-            <option>Farisa</option>
-            <option>Alex</option>
-        </select>
-        <div class="h-12"></div>
-        <label>Entwicklungen</label>
-        <a href="/test" class="block px-5 py-3 hover:bg-[#FFF000] cursor-pointer">test</a>
-        <a href="/stats/baseline" class="block px-5 py-3 hover:bg-[#FFF000] cursor-pointer">Baseline zeug</a>
-    </div>
-    <div class="flex-1 p-20">
-        <slot/>
-    </div>
+
+
+<div class="text-white flex flex-row justify-between min-h-screen">
+  <div class="w-[280px] py-5 bg-[#4c6c62] px-5">
+    <img src={Image} class="w-[280px]"/>
+
+    <label>Learner</label>
+    <hr class="mb-2"/>
+
+    {#each learners as currentLearner }
+      <input type="radio"
+             class="ml-5"
+             id={currentLearner.label}
+             name="fav_language"
+             checked={ currentLearner === learner }>
+      <label for={currentLearner.label}
+             on:click={() => chosenLearner.set(currentLearner)}>
+        {currentLearner.label}
+      </label>
+      <br>
+    {/each}
+
+    <div class="h-12"></div>
+
+    <label>Menu</label>
+    <hr/>
+
+    <a href="/stats" class="text-white visited:text-white block px-5 py-3 hover:bg-[#8EC6B4] cursor-pointer">Insights</a>
+
+  </div>
+  <div class="flex-1">
+    <slot />
+  </div>
 </div>
