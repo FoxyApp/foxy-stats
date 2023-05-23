@@ -30,11 +30,11 @@
   datasets: [{
     label: 'School',
     data: [65, 70, 75, 90, 85, 95, 95],
-    backgroundColor: 'rgba(255, 99, 132, 0.2)'
+    backgroundColor: '#B07264',
   }, {
     label: 'Foxy',
     data: [80, 65, 78, 80, 60, 95, 85],
-    backgroundColor: 'rgba(212, 175, 55, 0.2)'
+    backgroundColor: '#8EC6B4'
   }]
 }}/>
 </div>

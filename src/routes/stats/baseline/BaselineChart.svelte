@@ -40,23 +40,22 @@
     label: 'Farisa',
     data: [65, 70, 75, 90, 85],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: '#8EC6B423',
+    borderColor: '#8EC6B4',
+    pointBackgroundColor: '#8EC6B423',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: '#8EC6B4'
   }, {
     label: 'Baseline',
     data: [80, 65, 78, 80, 60],
     fill: true,
-    backgroundColor: 'rgba(212, 175, 55, 0.2)',
-    borderColor: 'rgba(212, 175, 55, 0.7)',
-    borderDash: [9, 4, 3, 4],
-    pointBackgroundColor: 'rgb(212, 175, 55)',
+    backgroundColor: '#B4977123',
+    borderColor: '#B49771',
+    pointBackgroundColor: '#B4977123',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(212, 175, 55)'
+    pointHoverBorderColor: '#B4977123'
   }]
 }}/>
 </div>
