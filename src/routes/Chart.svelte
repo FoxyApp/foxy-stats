@@ -21,7 +21,7 @@
     );
     import {Line} from 'svelte-chartjs'
 </script>
-<div class="">
+<div>
     <Line data={{
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [

@@ -8,7 +8,6 @@ import Chart from "./Chart.svelte";
 </svelte:head>
 
 <section>
-    <h1>Hi</h1>
     <Chart/>
 </section>
 <style>
